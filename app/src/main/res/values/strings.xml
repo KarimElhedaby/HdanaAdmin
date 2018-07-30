@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Kollo</string>
+    <string name="some_error" />
+    <string name="api_default_error" />
+    <string name="connection_error" />
+    <string name="api_retry_error" />
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="don_t_have_account">don\'t have account?</string>
+    <string name="logo_activity_transition">logo_activity_transition</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="error_username_password_incorrect">Phone or password incorrect</string>
+    <string name="empty_email_and_password">Please enter email and password</string>
+    <string name="shop_logo_transition">shop_logo_transaction</string>
+    <string name="offers">Offers</string>
+    <string name="sign_up_successfully">Sign Up Successful</string>
+    <string name="empty_username_and_password">User name and password empety</string>
+    <string name="empty_username">User name empety</string>
+    <string name="empty_email">Email empty</string>
+    <string name="email_not_vailed">Not Valid Email</string>
+    <string name="empty_password">Password is empty</string>
+    <string name="empty_phone">Phone is Empty</string>
+    <string name="empty_confirm_password">Empty Confirm Password</string>
+    <string name="error_password_not_equal_confirm_password">Password not match</string>
+    <string name="error_no_internet_connection">Please Connect to Internet</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_quantity_error">No items selected</string>
+    <string name="no_adress_error">Please enter your adress</string>
+    <string name="order_send_msg">Order Send Successful</string>
+    <string name="quantity">Quantity</string>
+    <string name="address">Address</string>
+    <string name="orderOffer">Order</string>
+    <string name="order">Order Now</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="kids">Kids</string>
+    <string name="items">items</string>
+    <string name="product_price">Product price</string>
+    <string name="delivery_price">Delivery Price</string>
+    <string name="order_types_amp_quantity"><![CDATA[Order Types & Quantity]]></string>
+    <string name="title_orders">Orders</string>
+    <string name="title_offers">Offers</string>
+    <string name="total_price">Total</string>
+</resources>

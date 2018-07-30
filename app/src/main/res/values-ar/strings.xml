@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_name">الاسم</string>
+    <string name="hint_email">البريد الالكتروني</string>
+    <string name="hint_phone">رقم الهاتف</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="sign_up">سجل</string>
+    <string name="sign_in">دخول</string>
+    <string name="don_t_have_account">ليس لديك حساب ؟</string>
+    <string name="home">الرئسية</string>
+    <string name="profile">الصفحة الشخصية</string>
+    <string name="cart">العربة</string>
+    <string name="offers">عروض</string>
+    <string name="error_username_password_incorrect">رقم الهاتف او كلمة المرور غير صحيحة</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="error_invalied_email">البريد الالكتروني غير صحيح</string>
+    <string name="action_retry">حاول مرة اخرى</string>
+
+    <string name="sign_up_successfully">تم التسجيل</string>
+    <string name="error_no_internet_connection">اتصل بالانترنت</string>
+
+    <string name="empty_username_and_password">ادخل الاسم و كلمة المرور</string>
+    <string name="empty_username">ادخل الاسم</string>
+    <string name="empty_email">ادخل البريد الالكتروني</string>
+    <string name="email_not_vailed">ادخل بريد الكتروني صحيح</string>
+    <string name="empty_password">ادخل كلمة المرور</string>
+    <string name="empty_phone">ادخل رقم الهاتف</string>
+    <string name="empty_confirm_password">ادخل تاكيد كلمة المرور</string>
+    <string name="error_password_not_equal_confirm_password">كلمة المرور غير متماثله</string>
+    <string name="no_quantity_error">No items selected</string>
+    <string name="no_adress_error">Please enter your adress</string>
+    <string name="order_send_msg">Order Send Successful</string>
+    <string name="order">اطلب الان</string>
+    <string name="title_orders">fd</string>
+    <string name="title_offers">Offers</string>
+    <string name="total_price">Total</string>
+</resources>

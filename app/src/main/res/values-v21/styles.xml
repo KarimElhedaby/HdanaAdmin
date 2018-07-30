@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/whiteColor</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+        <item name="android:textColorHint">@color/colorSecondaryText</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:colorBackground">@color/whiteColor</item>
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/colorAccent</item>
+    </style>
+
+    <style name="tabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="orderDetailsTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/whiteColor</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/whiteColor</item>
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+</resources>
