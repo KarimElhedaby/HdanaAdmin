@@ -15,8 +15,6 @@ class AddParentActivity : BaseActivity() ,ParentContract.View{
     override fun afterInflation(savedInstance: Bundle?) {
         presenter = ParentPresenter()
         presenter.onAttach(this)
-//        presenter.addTeacher()
-
         addParentBTN.setOnClickListener {
             showLoading()
             presenter.addParent(parentEmailET.text.toString(),parentPasswordET.text.toString())
@@ -28,5 +26,4 @@ class AddParentActivity : BaseActivity() ,ParentContract.View{
         Toast.makeText(applicationContext,""+msg,Toast.LENGTH_LONG).show()
 
     }
-
 }

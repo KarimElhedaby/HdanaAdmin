@@ -17,13 +17,16 @@ class AppDataManager : DataManager {
     private val database: FirebaseDatabase = FirebaseDatabase.getInstance()
 
 
-    override fun signUpTeacher(email: String, password: String, lisener: BaseLisener<String, String>) {
-        firebaseAppHelper.signUpTeacher(email, password)
+    override fun signUpTeacher(email: String, password: String,classesRef:List<String>, lisener: BaseLisener<String, String>) {
+        firebaseAppHelper.signUpTeacher(email, password,classesRef)
                 .addOnCompleteListener({
                     val myRef = database.getReference("teachers")
 
-                    myRef.child(it.result.user.uid).child("email").setValue(it.result.user.email)
-                    lisener.onSuccess(it.result.toString())
+                    with(myRef.child(it.result.user.uid)){
+                        child("email").setValue(it.result.user.email)
+                        child("classes").setValue(classesRef)
+                        lisener.onSuccess(it.result.toString())
+                    }
                 }).addOnFailureListener({
                     lisener.onFail(it.message.toString())
                 })
@@ -47,7 +50,7 @@ class AppDataManager : DataManager {
     }
 
     override fun signUpParent(email: String, password: String, lisener: BaseLisener<String, String>) {
-        firebaseAppHelper.signUpTeacher(email, password)
+        firebaseAppHelper.signUpParent(email, password)
                 .addOnCompleteListener({
                     val myRef = database.getReference("parents")
 

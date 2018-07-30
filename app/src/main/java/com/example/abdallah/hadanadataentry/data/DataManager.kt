@@ -5,7 +5,7 @@ import com.example.abdallah.hadanadataentry.model.ClassModel
 import com.example.abdallah.hadanadataentry.model.Kid
 
 interface DataManager {
-    fun signUpTeacher(email: String, password: String, lisener: BaseLisener<String, String>)
+    fun signUpTeacher(email: String, password: String, classesRef:List<String>,lisener: BaseLisener<String, String>)
 
     fun loginTeacher(email: String, password: String, lisener: BaseLisener<String, String>)
 

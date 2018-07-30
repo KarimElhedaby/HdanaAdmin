@@ -10,7 +10,7 @@ interface TeacherContract {
     }
 
     interface Presenter<V :View> :MvpPresenter<V>{
-        fun addTeacher(email : String , password : String)
+        fun addTeacher(email : String , password : String,classesRef:List<String>)
 
     }
 }

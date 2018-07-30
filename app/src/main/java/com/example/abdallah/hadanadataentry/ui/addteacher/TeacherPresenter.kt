@@ -6,10 +6,11 @@ import com.example.computec.eltadreb.ui.base.BasePresenter
 
 class TeacherPresenter<V : TeacherContract.View> : BasePresenter<V>(), TeacherContract.Presenter<V> {
 
+
     private var dataManager: AppDataManager = AppDataManager()
 
-    override fun addTeacher(email: String, password: String) {
-        dataManager.signUpTeacher(email, password,
+    override fun addTeacher(email: String, password: String,classesRef:List<String>) {
+        dataManager.signUpTeacher(email, password,classesRef,
                 object : BaseLisener<String, String> {
                     override fun onSuccess(data: String) {
                         mvpView?.onTeacherAdded(data)

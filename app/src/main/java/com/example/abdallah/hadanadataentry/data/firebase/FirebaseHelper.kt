@@ -10,7 +10,7 @@ interface FirebaseHelper {
 
     fun loginParent(email: String, password: String): Task<AuthResult>
 
-    fun signUpTeacher(email: String, password: String): Task<AuthResult>
+    fun signUpTeacher(email: String, password: String,classesRef:List<String>): Task<AuthResult>
 
     fun loginTeacher(email: String, password: String): Task<AuthResult>
 

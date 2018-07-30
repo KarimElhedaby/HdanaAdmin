@@ -22,7 +22,7 @@ class AppFirebaseHelper : FirebaseHelper {
     private val database: FirebaseDatabase = FirebaseDatabase.getInstance()
 
 
-    override fun signUpTeacher(email: String, password: String): Task<AuthResult> {
+    override fun signUpTeacher(email: String, password: String,classesRef:List<String>): Task<AuthResult> {
         return auth.createUserWithEmailAndPassword(email, password)
     }
 
