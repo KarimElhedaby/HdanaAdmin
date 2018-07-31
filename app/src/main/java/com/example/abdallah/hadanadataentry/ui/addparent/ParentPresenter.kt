@@ -1,7 +1,7 @@
 package com.example.abdallah.hadanadataentry.ui.addparent
 
 import com.example.abdallah.hadanadataentry.ui.base.BaseLisener
-import com.example.abdallah.hadanadataentry.ui.data.AppDataManager
+import com.example.abdallah.hadanadataentry.data.AppDataManager
 import com.example.computec.eltadreb.ui.base.BasePresenter
 
 class ParentPresenter<V : ParentContract.View> : BasePresenter<V>(), ParentContract.Presenter<V> {

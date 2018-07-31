@@ -1,8 +1,8 @@
-package com.example.abdallah.hadanadataentry.ui.data
+package com.example.abdallah.hadanadataentry.data
 
 import com.example.abdallah.hadanadataentry.ui.base.BaseLisener
-import com.example.abdallah.hadanadataentry.ui.model.ClassModel
-import com.example.abdallah.hadanadataentry.ui.model.Kid
+import com.example.abdallah.hadanadataentry.model.ClassModel
+import com.example.abdallah.hadanadataentry.model.Kid
 
 interface DataManager {
     fun signUpTeacher(email: String, password: String, lisener: BaseLisener<String, String>)

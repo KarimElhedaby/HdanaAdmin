@@ -1,17 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Add kid Image " />
 
     <ImageView
+        android:id="@+id/kidIV"
         android:layout_width="150dp"
-        android:background="@color/colorAccent"
         android:layout_height="150dp"
-        android:layout_margin="8dp"
         android:layout_gravity="center"
-        android:id="@+id/kidIV"/>
+        android:layout_margin="8dp"
+        android:layout_marginEnd="10dp"
+        android:src="@android:drawable/ic_lock_power_off" />
+
+    <EditText
+        android:id="@+id/kidNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter kid name " />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Choose kid class" />
+
+    <Spinner
+        android:layout_marginTop="5dp"
+        android:id="@+id/kidClassSpiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_margin="10dp"
+        android:gravity="center"></Spinner>
+
+
+    <Button
+        android:id="@+id/addKidBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Kid"
+        android:textAllCaps="false" />
+
+
 </LinearLayout>

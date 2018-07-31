@@ -3,7 +3,7 @@ package com.example.abdallah.hadanadataentry.ui.addclass
 import android.os.Bundle
 import android.widget.Toast
 import com.example.abdallah.hadanadataentry.R
-import com.example.abdallah.hadanadataentry.ui.model.ClassModel
+import com.example.abdallah.hadanadataentry.model.ClassModel
 import com.hamza.solutions.kolo.ui.base.BaseActivity
 
 class AddClassActivity : BaseActivity(),ClassContract.View {

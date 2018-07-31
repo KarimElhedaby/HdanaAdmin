@@ -1,9 +1,8 @@
 package com.example.abdallah.hadanadataentry.ui.addkid
 
 import com.example.abdallah.hadanadataentry.ui.base.BaseLisener
-import com.example.abdallah.hadanadataentry.ui.data.AppDataManager
-import com.example.abdallah.hadanadataentry.ui.model.ClassModel
-import com.example.abdallah.hadanadataentry.ui.model.Kid
+import com.example.abdallah.hadanadataentry.data.AppDataManager
+import com.example.abdallah.hadanadataentry.model.Kid
 import com.example.computec.eltadreb.ui.base.BasePresenter
 import timber.log.Timber
 

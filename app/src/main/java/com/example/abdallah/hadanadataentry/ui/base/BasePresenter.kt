@@ -4,7 +4,7 @@ import android.util.Log
 import com.androidnetworking.common.ANConstants
 import com.androidnetworking.error.ANError
 import com.example.abdallah.hadanadataentry.R
-import com.example.abdallah.hadanadataentry.ui.model.ApiError
+import com.example.abdallah.hadanadataentry.model.ApiError
 import com.example.computec.eltadreb.utils.AppConstants
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonSyntaxException

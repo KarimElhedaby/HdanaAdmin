@@ -1,4 +1,4 @@
-package com.example.abdallah.hadanadataentry.ui.model
+package com.example.abdallah.hadanadataentry.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

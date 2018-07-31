@@ -1,11 +1,9 @@
-package com.example.abdallah.hadanadataentry.ui.data.firebase
+package com.example.abdallah.hadanadataentry.data.firebase
 
-import com.example.abdallah.hadanadataentry.ui.base.BaseLisener
-import com.example.abdallah.hadanadataentry.ui.model.ClassModel
-import com.example.abdallah.hadanadataentry.ui.model.Kid
+import com.example.abdallah.hadanadataentry.model.ClassModel
+import com.example.abdallah.hadanadataentry.model.Kid
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
-import com.google.firebase.database.DataSnapshot
 
 interface FirebaseHelper {
     fun signUpParent(email: String, password: String): Task<AuthResult>

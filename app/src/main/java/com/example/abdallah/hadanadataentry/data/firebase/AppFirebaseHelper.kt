@@ -1,14 +1,11 @@
-package com.example.abdallah.hadanadataentry.ui.data.firebase
+package com.example.abdallah.hadanadataentry.data.firebase
 
-import com.example.abdallah.hadanadataentry.ui.model.ClassModel
-import com.example.abdallah.hadanadataentry.ui.model.Kid
+import com.example.abdallah.hadanadataentry.model.ClassModel
+import com.example.abdallah.hadanadataentry.model.Kid
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 import timber.log.Timber
 
 class AppFirebaseHelper : FirebaseHelper {

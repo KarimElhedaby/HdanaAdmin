@@ -1,10 +1,10 @@
-package com.example.abdallah.hadanadataentry.ui.data
+package com.example.abdallah.hadanadataentry.data
 
+import com.example.abdallah.hadanadataentry.data.firebase.AppFirebaseHelper
+import com.example.abdallah.hadanadataentry.data.firebase.FirebaseHelper
+import com.example.abdallah.hadanadataentry.model.ClassModel
+import com.example.abdallah.hadanadataentry.model.Kid
 import com.example.abdallah.hadanadataentry.ui.base.BaseLisener
-import com.example.abdallah.hadanadataentry.ui.data.firebase.AppFirebaseHelper
-import com.example.abdallah.hadanadataentry.ui.data.firebase.FirebaseHelper
-import com.example.abdallah.hadanadataentry.ui.model.ClassModel
-import com.example.abdallah.hadanadataentry.ui.model.Kid
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.database.FirebaseDatabase
 import timber.log.Timber

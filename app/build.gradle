@@ -25,6 +25,7 @@ android {
     }
     defaultConfig {
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
 }
 
@@ -54,6 +55,12 @@ dependencies {
     implementation 'jp.wasabeef:blurry:2.1.1'
     implementation 'com.github.safetysystemtechnology:progress-image-view-android:v1.0'
 
+    // blur image
+    implementation 'jp.wasabeef:blurry:2.1.1'
+    implementation 'com.fivehundredpx:blurringview:1.0.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+    implementation 'id.zelory:compressor:2.1.0'
+
     // network
     implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
     implementation "com.squareup.retrofit2:converter-gson:${versions.retrofit}"
@@ -62,6 +69,11 @@ dependencies {
     implementation "com.amitshekhar.android:rx2-android-networking:${versions.rx2Networking}"
 
     implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-database:11.8.0'
 
     // font
     implementation "uk.co.chrisjenx:calligraphy:${versions.calligraphy}"
@@ -69,17 +81,9 @@ dependencies {
     // event bus
     implementation 'org.greenrobot:eventbus:3.1.1'
 
-    // blur image
-    implementation 'jp.wasabeef:blurry:2.1.1'
-    implementation 'com.fivehundredpx:blurringview:1.0.0'
-
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
-    implementation 'id.zelory:compressor:2.1.0'
-
     // debug
-    implementation 'com.google.firebase:firebase-auth:11.8.0'
-    implementation 'com.google.firebase:firebase-database:11.8.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.google.firebase:firebase-storage:11.8.0'
     debugImplementation "com.willowtreeapps.hyperion:hyperion-core:${versions.hyperion}"
     debugImplementation "com.willowtreeapps.hyperion:hyperion-attr:${versions.hyperion}"
     debugImplementation "com.willowtreeapps.hyperion:hyperion-disk:${versions.hyperion}"
@@ -94,8 +98,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
 }
 
 apply plugin: 'com.google.gms.google-services'
-
-
