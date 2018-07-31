@@ -6,6 +6,67 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ui.addclass.AddClassActivity">
+<EditText
+    android:id="@+id/classNameET"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin10"
+    android:hint="Enter class name"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Choose teacher" />
+
+    <Spinner
+        android:layout_marginTop="5dp"
+        android:id="@+id/classTeacherSpiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"></Spinner>
 
 
+    <EditText
+        android:id="@+id/subjectNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        android:hint="Enter Subject name for this teacher "
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Choose KId" />
+
+    <Spinner
+        android:layout_marginTop="5dp"
+        android:id="@+id/classKidSpiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"></Spinner>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="add class"
+    android:textAllCaps="false"
+    android:id="@+id/addclassBTN"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="clear all"
+        android:background="@color/red"
+        android:textAllCaps="false"
+        android:id="@+id/clearBTN"/>
 </LinearLayout>
