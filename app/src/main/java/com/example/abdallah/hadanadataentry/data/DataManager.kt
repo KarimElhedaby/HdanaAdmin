@@ -9,7 +9,7 @@ interface DataManager {
 
     fun loginTeacher(email: String, password: String, lisener: BaseLisener<String, String>)
 
-    fun signUpParent(email: String, password: String, lisener: BaseLisener<String, String>)
+    fun signUpParent(email: String, password: String, kidsRef : ArrayList<String>,lisener: BaseLisener<String, String>)
 
     fun loginParent(email: String, password: String, lisener: BaseLisener<String, String>)
 

@@ -70,12 +70,8 @@ class AddKidActivity : BaseActivity(), KidContract.View {
                         choosenClass = v.key
                     }
                 }
-
             }
-
         }
-
-
 
         kidIV.setOnClickListener {
 
@@ -130,7 +126,6 @@ class AddKidActivity : BaseActivity(), KidContract.View {
 
     }
 
-
     private fun getImageFromAlbum() {
         val photoPickerIntent = Intent(Intent.ACTION_PICK)
         photoPickerIntent.type = "image/*"
@@ -169,12 +164,9 @@ class AddKidActivity : BaseActivity(), KidContract.View {
         }).addOnFailureListener({
             Toast.makeText(applicationContext, "" + it.message.toString(), Toast.LENGTH_LONG).show()
         })
-
-
     }
 
     override fun onKidAdded(msg: String) {
         Toast.makeText(applicationContext, "" + msg, Toast.LENGTH_LONG).show()
     }
-
 }

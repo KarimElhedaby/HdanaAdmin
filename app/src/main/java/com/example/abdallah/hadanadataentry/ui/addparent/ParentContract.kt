@@ -10,7 +10,7 @@ interface ParentContract {
     }
 
     interface Presenter<V :View> :MvpPresenter<V>{
-        fun addParent(email : String , password : String)
+        fun addParent(email : String , password : String,kidsRef : ArrayList<String>)
 
     }
 }

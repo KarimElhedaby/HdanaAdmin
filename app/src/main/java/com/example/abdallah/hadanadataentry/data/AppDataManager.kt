@@ -49,12 +49,13 @@ class AppDataManager : DataManager {
 
     }
 
-    override fun signUpParent(email: String, password: String, lisener: BaseLisener<String, String>) {
-        firebaseAppHelper.signUpParent(email, password)
+    override fun signUpParent(email: String, password: String,kidsRef : ArrayList<String>, lisener: BaseLisener<String, String>) {
+        firebaseAppHelper.signUpParent(email, password,kidsRef)
                 .addOnCompleteListener({
                     val myRef = database.getReference("parents")
 
                     myRef.child(it.result.user.uid).child("email").setValue(it.result.user.email)
+                    myRef.child(it.result.user.uid).child("kids").setValue(kidsRef)
                     lisener.onSuccess(it.result.toString())
                 }).addOnFailureListener({
                     lisener.onFail(it.message.toString())

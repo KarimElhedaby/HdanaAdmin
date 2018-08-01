@@ -30,7 +30,7 @@ class AppFirebaseHelper : FirebaseHelper {
         return auth.signInWithEmailAndPassword(email, password)
     }
 
-    override fun signUpParent(email: String, password: String): Task<AuthResult> {
+    override fun signUpParent(email: String, password: String,kidsRef : ArrayList<String>): Task<AuthResult> {
         return auth.createUserWithEmailAndPassword(email, password)
     }
 

@@ -6,7 +6,7 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
 
 interface FirebaseHelper {
-    fun signUpParent(email: String, password: String): Task<AuthResult>
+    fun signUpParent(email: String, password: String,kidsRef : ArrayList<String>): Task<AuthResult>
 
     fun loginParent(email: String, password: String): Task<AuthResult>
 

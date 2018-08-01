@@ -27,6 +27,8 @@
         android:backgroundTint="@color/colorAccent"
         android:layout_height="wrap_content"/>
 
+
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,4 +37,7 @@
         android:textAllCaps="false"
         android:text="Add Teacher"
         android:id="@+id/addTeacherBTN"/>
+
+
+
 </LinearLayout>

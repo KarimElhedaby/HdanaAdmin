@@ -18,6 +18,15 @@
         android:hint="parent password"
         android:id="@+id/parentPasswordET"/>
 
+    <Spinner
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/kidsSpiner">
+
+    </Spinner>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,4 +35,17 @@
         android:textAllCaps="false"
         android:text="Add Parent"
         android:id="@+id/addParentBTN"/>
+
+    <Button
+        android:id="@+id/deleteKidsBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@color/whiteColor"
+        android:text="Delete All Added kids"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"/>
+
+
+
 </LinearLayout>

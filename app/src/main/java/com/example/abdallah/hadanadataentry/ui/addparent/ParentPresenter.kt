@@ -8,8 +8,8 @@ class ParentPresenter<V : ParentContract.View> : BasePresenter<V>(), ParentContr
 
     private var dataManager: AppDataManager = AppDataManager()
 
-    override fun addParent(email: String, password: String) {
-        dataManager.signUpParent(email, password,
+    override fun addParent(email: String, password: String,kidsRef : ArrayList<String>) {
+        dataManager.signUpParent(email, password,kidsRef,
                 object : BaseLisener<String, String> {
                     override fun onSuccess(data: String) {
                         mvpView?.onParentAdded(data)
